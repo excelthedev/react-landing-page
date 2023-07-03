@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "neuton-800";
+  src: url("./Assets/fonts/Neuton-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "neuton-500";
+  src: url("./Assets/fonts/Neuton-Regular.ttf");
+}
+
+html,
+body {
+  font-family: "neuton-500";
+}
+.wraper {
+  overflow-x: hidden;
+}
+
+.container {
+  animation: animate 10s linear infinite;
+  overflow-x: hidden;
+}
+
+.wraper:nth-child(1) {
+  animation: r;
+}
+
+@keyframes r {
+  10% {
+    filter: blur(3);
+  }
+  11% {
+    filter: blur(0);
+  }
+  89% {
+    filter: blur(0);
+  }
+  90% {
+    filter: blur(3);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(500px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-500px);
+  }
+}
