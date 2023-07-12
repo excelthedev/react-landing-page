@@ -30,7 +30,7 @@ const Header = () => {
 
         {/* you use the navlink when working with the navigation bar */}
         <ul className="flex items-center gap-5">
-          <NavLink to="#">Membership</NavLink>
+          <NavLink to="#">Membership Status</NavLink>
           <NavLink to="#">Resources</NavLink>
           <NavLink to="#">Company</NavLink>
         </ul>
